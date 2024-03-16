@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+
+    <title>Form</title>
+</head>
+<body>
+    <div class="frame">
+    <style>
+        form{
+            flex-direction: column;
+            display: flex;
+            gap: 20px;
+            max-width: 300px;
+             }
+
+    </style>
+ 
+
+    <form>
+        
+        <label>
+            <p>Ім'я</p>
+            <input type="text" placeholder="Введіть Ім'я">
+        </label>
+        <label for="name">Прізвище</label>
+         <input id="surname" type="text" placeholder="Введіть Прізвище">
+
+       <div>
+        <div>
+            <p>Ваша стать:</p>
+            <label class="checkbox">
+                <p>Чоловік</p>
+                <input class="checkbox__input" name="radio" type="radio" value="val1">
+                <span class="checkbox__input-el"></span>
+    
+            </label>
+
+            <label class="checkbox">    
+                <p>Жінка</p>
+                <input class="checkbox__input"  name="radio"type="radio" value="val2">
+                <span class="checkbox__input-el"></span>
+
+            </label>
+
+        </div>
+
+        <label> 
+            <p>Email</p>
+            <input type="text" placeholder="Ваш Email">
+        </label>
+
+        <button type="submit">Send</button> 
+       </div>
+    </form>
+</body>
+</html>
